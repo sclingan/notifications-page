@@ -4,10 +4,8 @@ function Header() {
 
     return (
       <header>
-
-         Notifications 3
-
-         Mark all as read
+         <h2>Notifications 3</h2>
+         <button>Mark all as read</button>
       </header>
     )
   }

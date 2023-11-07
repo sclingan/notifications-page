@@ -7,6 +7,7 @@ function App() {
 
   return (
     <main>
+      <h1 className='sr-only'>Notifications Page</h1>
       <Header />
       <Section />
     </main>
