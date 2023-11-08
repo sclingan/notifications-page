@@ -1,10 +1,12 @@
+import { useState } from 'react'
 
 
 function Header() {
-
+  const [unread, setUnRead] = useState(3)
+    
     return (
       <header>
-         <h2>Notifications 3</h2>
+         <h2>Notifications <span className='unread'>{unread}</span></h2>
          <button>Mark all as read</button>
       </header>
     )

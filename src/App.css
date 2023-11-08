@@ -65,9 +65,9 @@ body {
   font-weight: var(--fw-500);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-inline: 2rem;
+  margin-block: 2rem; 
 }
 
 main {
@@ -80,10 +80,14 @@ main {
 header {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+  /* margin-left: 3rem; */
 }
 
 section {
-
+  background-color: var(--neutral-white);/*placeholder value*/
 }
 
 ol {
@@ -94,13 +98,37 @@ li {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  align-items: center;
   padding-block: 2rem;
-  background-color: var(--neutral-light-greyish-blue1);
   border-radius: 1rem;
   margin-block: 1rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.unread {
+  background-color: var(--primary-blue);
+  color: var(--neutral-white);
+  padding-inline: 0.7rem;
+  border-radius: 0.3rem;
+  margin-inline: 0.3rem;
 }
 
 img {
   max-width: 10%; /* check this size */
   /* padding-block: 1rem; */
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }

@@ -6,8 +6,8 @@ import mark from '../public/images/avatar-mark-webber.webp';
 import nathan from '../public/images/avatar-nathan-peterson.webp';
 import rizky from '../public/images/avatar-rizky-hasanuddin.webp';
 
-function Section() {
 
+function Section() {
     return (
       <section>
          <ol>
