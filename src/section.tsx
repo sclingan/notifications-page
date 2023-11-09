@@ -13,46 +13,46 @@ function Section() {
          <ol>
              <li>
               <img src={mark} alt=""></img>
-              <p>Mark Webber reacted to your recent post My first tournament today!</p>
-                 1m ago
+              <p className='post'>Mark Webber reacted to your recent post My first tournament today!</p>
+                 <p className='post-time'>1m ago</p>
              </li>
 
              <li>
               <img src={angela} alt=""></img>
-              <p>Angela Gray followed you</p>
-                 5m ago
+              <p className='post'>Angela Gray followed you</p>
+                 <p className='post-time'>5m ago</p>
              </li>
 
              <li>
               <img src={jacob} alt=""></img>
-              <p>Jacob Thompson has joined your group Chess Club</p>
-                 1 day ago
+              <p className='post'>Jacob Thompson has joined your group Chess Club</p>
+                 <p className='post-time'>1 day ago</p>
              </li>
 
              <li>
               <img src={rizky} alt=""></img>
-              <p>Rizky Hasanuddin sent you a private message</p>
-                 5 days ago
-              <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              <p className='post'>Rizky Hasanuddin sent you a private message</p>
+                 <p className='post-time'>5 days ago</p>
+              <p className='post-comments'>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
                 I'm already having lots of fun and improving my game.</p>
               </li>
 
              <li>
               <img src={kimberly} alt=""></img>
-              <p>Kimberly Smith commented on your picture</p>
-                 1 week ago
+              <p className='post'>Kimberly Smith commented on your picture</p>
+                 <p className='post-time'>1 week ago</p>
              </li>
 
              <li>
               <img src={nathan} alt=""></img>
-              <p>Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate</p>
-                 2 weeks ago
+              <p className='post'>Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate</p>
+                 <p className='post-time'>2 weeks ago</p>
               </li>
 
              <li>
               <img src={anna} alt=""></img>
-              <p>Anna Kim left the group Chess Club</p>
-                 2 weeks ago
+              <p className='post'>Anna Kim left the group Chess Club</p>
+                 <p className='post-time'>2 weeks ago</p>
              </li>
          </ol>
       </section>
