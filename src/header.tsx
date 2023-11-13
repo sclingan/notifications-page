@@ -6,7 +6,7 @@ function Header() {
     
     return (
       <header>
-         <h2>Notifications <span className='unread'>{unread}</span></h2>
+         <h2>Notifications <span className='notification'>{unread}</span></h2>
          <button>Mark all as read</button>
       </header>
     )

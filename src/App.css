@@ -64,7 +64,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: var(--neutral-light-greyish-blue);
+  background-color: var(--neutral-light-greyish-blue2);
   font-family: var(--font-family);
   /* font-size: var(--font-size); */
   font-size: 0.8rem;
@@ -81,7 +81,7 @@ main {
   border-radius: 1rem;
   background-color: var(--neutral-white);
   padding-block: 2rem;
-  padding-inline: 0.5rem;
+  padding-inline: 0.8rem;
 }
 
 header {
@@ -101,15 +101,18 @@ h2 {
 
 ol {
   list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 li {
   display: grid;
   grid-template-columns: 20% auto;
   align-items: center;
-  column-gap: 0.2rem;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   margin-block: 2rem;
+  padding-block: 1rem;
 }
 
 .post {
@@ -136,7 +139,7 @@ button {
   cursor: pointer;
 }
 
-.unread {
+.notification {
   background-color: var(--primary-blue);
   color: var(--neutral-white);
   padding-inline: 0.7rem;
@@ -144,8 +147,22 @@ button {
   margin-inline: 0.3rem;
 }
 
+.unread {
+  background-color: var(--neutral-light-greyish-blue);
+}
+/* fix this */
+.post::after {
+  content: '';
+  border-radius: 50%;
+  background-color: var(--primary-red);
+  margin-left: 0.5rem;
+}
+
 img {
   max-width: 60%; 
+  grid-column: 1/1;
+  align-self: center;
+  justify-self: center;
 }
 
 .sr-only:not(:focus):not(:active) {
