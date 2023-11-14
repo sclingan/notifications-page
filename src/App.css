@@ -150,11 +150,13 @@ button {
 .unread {
   background-color: var(--neutral-light-greyish-blue);
 }
-/* fix this */
-.post::after {
-  content: '';
+
+.dot {
+  display: inline-block;
   border-radius: 50%;
   background-color: var(--primary-red);
+  min-height: 0.5rem;
+  min-width: 0.5rem;
   margin-left: 0.5rem;
 }
 
