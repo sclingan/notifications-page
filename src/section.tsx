@@ -13,47 +13,61 @@ function Section() {
          <ol>
              <li className='unread'>
               <img src={mark} alt=""></img>
+              <div>
               <p className='post'><span className='user-name'>Mark Webber</span> reacted to your recent post My first tournament today!
               <span className='dot'></span></p>
               <p className='post-time'>1m ago</p>
+              </div>
              </li>
 
              <li className='unread'>
               <img src={angela} alt=""></img>
+              <div>
               <p className='post'><span className='user-name'>Angela Gray</span> followed you<span className='dot'></span></p>
               <p className='post-time'>5m ago</p>
+              </div>
              </li>
 
              <li className='unread'>
               <img src={jacob} alt=""></img>
+              <div>
               <p className='post'><span className='user-name'>Jacob Thompson</span> has joined your group Chess Club<span className='dot'></span></p>
               <p className='post-time'>1 day ago</p>
+              </div>
              </li>
 
              <li>
               <img src={rizky} alt=""></img>
+              <div>
               <p className='post'><span className='user-name'>Rizky Hasanuddin</span> sent you a private message</p>
               <p className='post-time'>5 days ago</p>
               <p className='post-comments'>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
                 I'm already having lots of fun and improving my game.</p>
+              </div>
               </li>
 
              <li>
               <img src={kimberly} alt=""></img>
+              <div>
               <p className='post'><span className='user-name'>Kimberly Smith</span> commented on your picture</p>
               <p className='post-time'>1 week ago</p>
+              </div>
              </li>
 
              <li>
               <img src={nathan} alt=""></img>
+              <div>
               <p className='post'><span className='user-name'>Nathan Peterson</span> reacted to your recent post 5 end-game strategies to increase your win rate</p>
               <p className='post-time'>2 weeks ago</p>
+              </div>
               </li>
 
              <li>
               <img src={anna} alt=""></img>
+              <div>
               <p className='post'><span className='user-name'>Anna Kim</span> left the group Chess Club</p>
               <p className='post-time'>2 weeks ago</p>
+              </div>
              </li>
          </ol>
       </section>

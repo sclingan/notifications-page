@@ -109,6 +109,7 @@ ol {
 li {
   display: grid;
   grid-template-columns: 20% auto;
+  grid-template-rows: auto;
   align-items: center;
   border-radius: 0.4rem;
   margin-block: 2rem;
@@ -117,10 +118,12 @@ li {
 
 .post {
   grid-column: 2/2;
+  /* align-self: first baseline; */
 }
 
 .post-time {
   grid-column: 2/2;
+  /* align-self: last baseline; */
 }
 
 .post-comments {
