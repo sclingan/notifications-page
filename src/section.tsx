@@ -5,6 +5,7 @@ import kimberly from '../public/images/avatar-kimberly-smith.webp';
 import mark from '../public/images/avatar-mark-webber.webp';
 import nathan from '../public/images/avatar-nathan-peterson.webp';
 import rizky from '../public/images/avatar-rizky-hasanuddin.webp';
+import chess from '../public/images/image-chess.webp';
 
 
 function Section() {
@@ -48,8 +49,9 @@ function Section() {
 
              <li>
               <img src={kimberly} alt=""></img>
-              <div>
+              <div className='post-container'>
               <p className='post'><span className='user-name'>Kimberly Smith</span> commented on your picture</p>
+              <img src={chess} className='post-pic'></img>
               <p className='post-time'>1 week ago</p>
               </div>
              </li>

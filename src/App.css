@@ -66,7 +66,6 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   background-color: var(--neutral-light-greyish-blue2);
   font-family: var(--font-family);
-  /* font-size: var(--font-size); */
   font-size: 0.8rem;
   font-weight: var(--fw-500);
   color: var(--nueutral-dark-grayish-blue);
@@ -114,16 +113,15 @@ li {
   border-radius: 0.4rem;
   margin-block: 2rem;
   padding-block: 1rem;
+  padding-inline: 1rem;
 }
 
 .post {
   grid-column: 2/2;
-  /* align-self: first baseline; */
 }
 
 .post-time {
   grid-column: 2/2;
-  /* align-self: last baseline; */
 }
 
 .post-comments {
@@ -169,6 +167,11 @@ img {
   align-self: center;
   justify-self: center;
 }
+
+.post-pic {
+  max-width: 40%;
+}
+
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
