@@ -14,8 +14,8 @@ function Section() {
          <ol>
              <li className='unread'>
               <img src={mark} alt=""></img>
-              <div>
-              <p className='post'><span className='user-name'>Mark Webber</span> reacted to your recent post My first tournament today!
+              <div className='post-container'>
+              <p className='post'><span className='user-name'>Mark Webber</span> reacted to your recent post <span className='recent-post'>My first tournament today!</span>
               <span className='dot'></span></p>
               <p className='post-time'>1m ago</p>
               </div>
@@ -23,7 +23,7 @@ function Section() {
 
              <li className='unread'>
               <img src={angela} alt=""></img>
-              <div>
+              <div className='post-container'>
               <p className='post'><span className='user-name'>Angela Gray</span> followed you<span className='dot'></span></p>
               <p className='post-time'>5m ago</p>
               </div>
@@ -31,15 +31,15 @@ function Section() {
 
              <li className='unread'>
               <img src={jacob} alt=""></img>
-              <div>
-              <p className='post'><span className='user-name'>Jacob Thompson</span> has joined your group Chess Club<span className='dot'></span></p>
+              <div className='post-container'>
+              <p className='post'><span className='user-name'>Jacob Thompson</span> has joined your group <span className='channel'>Chess Club</span><span className='dot'></span></p>
               <p className='post-time'>1 day ago</p>
               </div>
              </li>
 
              <li>
               <img src={rizky} alt=""></img>
-              <div>
+              <div className='post-container'>
               <p className='post'><span className='user-name'>Rizky Hasanuddin</span> sent you a private message</p>
               <p className='post-time'>5 days ago</p>
               <p className='post-comments'>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
@@ -58,16 +58,16 @@ function Section() {
 
              <li>
               <img src={nathan} alt=""></img>
-              <div>
-              <p className='post'><span className='user-name'>Nathan Peterson</span> reacted to your recent post 5 end-game strategies to increase your win rate</p>
+              <div className='post-container'>
+              <p className='post'><span className='user-name'>Nathan Peterson</span> reacted to your recent post <span className='recent-post'>5 end-game strategies to increase your win rate</span></p>
               <p className='post-time'>2 weeks ago</p>
               </div>
               </li>
 
              <li>
               <img src={anna} alt=""></img>
-              <div>
-              <p className='post'><span className='user-name'>Anna Kim</span> left the group Chess Club</p>
+              <div className='post-container'>
+              <p className='post'><span className='user-name'>Anna Kim</span> left the group <span className='channel'>Chess Club</span></p>
               <p className='post-time'>2 weeks ago</p>
               </div>
              </li>
