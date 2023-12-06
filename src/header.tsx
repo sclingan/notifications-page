@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 
 function Header() {
-  const [unread, setRead] = useState(0);
   const [count, setCount] = useState(3);
   function mark_Read() {
     // All new msg are marked unread
@@ -16,12 +15,12 @@ function Header() {
     msgArr.map(e => e.classList.remove('unread'));  
     const dotArr = Array.from(icon);
     dotArr.map(e => e.classList.remove('dot'));
-    
+    setCount(0);
   }
     
     return (
       <header>
-         <h2>Notifications <span className='notification'>{count}</span></h2>{/*Fix unread notification*/}
+         <h2>Notifications <span className='notification'>{count}</span></h2>
          <button onClick={mark_Read}>Mark all as read</button>
       </header>
     )

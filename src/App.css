@@ -63,13 +63,6 @@ p, h1, h2, h3, h4, h5, h6 {
   src: url('../public/fonts/PlusJakartaSans-VariableFont_wght.ttf');
 }
 
-
-/* TODO
-   fix inline width of posts
-   organize css 
-   fix post time spacing w/ image
-*/
-
 body {
   background-color: var(--neutral-light-greyish-blue2);
   font-family: var(--font-family);
@@ -105,12 +98,24 @@ h2 {
   color: var(--neutral-dark-blue);
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  color: var(--nueutral-dark-grayish-blue);
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--primary-blue);
+}
+
 ol {
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
 }
+
 
 li {
   display: grid;
@@ -169,17 +174,6 @@ li {
   color: var(--primary-blue);
 }
 
-button {
-  border: none;
-  background-color: transparent;
-  color: var(--nueutral-dark-grayish-blue);
-  cursor: pointer;
-}
-
-button:hover {
-  color: var(--primary-blue);
-}
-
 .notification {
   background-color: var(--primary-blue);
   color: var(--neutral-white);
@@ -210,12 +204,12 @@ img {
 
 .post-container {
   display: grid;
-  grid-template-columns: 75% auto;
+  grid-template-columns: 1fr 4rem;
   grid-template-rows: auto auto;
 }
 
 .post-pic {
-  max-width: 50%;
+  max-width: 60%;
   grid-row: 1/3;
   grid-column: 2/2;
   justify-self: last baseline;
@@ -231,4 +225,10 @@ img {
   position: absolute;
   white-space: nowrap; 
   width: 1px;
+}
+
+@media(min-width: 37.5rem) {
+  .post-container {
+    grid-template-columns: 1fr auto;
+  }
 }
